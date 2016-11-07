@@ -1,49 +1,176 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>DrupalCon Dublin 2016</title>
+      <title>DrupalCon Dublin 2016</title>
 
-		<link rel="stylesheet" href="https://andreadsw.github.io/site/reveal.js/css/reveal.css">
-		<link rel="stylesheet" href="https://andreadsw.github.io/site/reveal.js/css/theme/black.css">
+      <link rel="stylesheet" href="https://andreadsw.github.io/site/reveal.js/css/reveal.css">
+      <link rel="stylesheet" href="https://andreadsw.github.io/site/reveal.js/css/theme/sky.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="https://andreadsw.github.io/site/reveal.js/lib/css/zenburn.css">
+      <!-- Theme used for syntax highlighting of code -->
+      <link rel="stylesheet" href="https://andreadsw.github.io/site/reveal.js/lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Presentation 1</section>
-				<section>Presentation 2</section>
-			</div>
-		</div>
+      <!-- Printing and PDF exports -->
+      <script>
+         var link = document.createElement( 'link' );
+         link.rel = 'stylesheet';
+         link.type = 'text/css';
+         link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+         document.getElementsByTagName( 'head' )[0].appendChild( link );
+      </script>
+   </head>
+   <body>
+      <div class="reveal">
+         <div class="slides">
+            <!-- Background image -->
+            <section data-background-image="slides/images/bg-header-watercolor-small-short.jpg" data-background-size="900px" data-background-repeat="no-repeat">
+            </section>
 
-		<script src="https://andreadsw.github.io/site/reveal.js/lib/js/head.min.js"></script>
-		<script src="https://andreadsw.github.io/site/reveal.js/js/reveal.js"></script>
+            <!-- Presenters names  -->
+            <section>
+               <h2>Front-end development</h2>
+               <p><font color="red">by @andreadsw</font></p>
+              <h2>Back-end development</h2>
+               <p><font color="red">by @ioanma</font></p>
+            </section>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'https://andreadsw.github.io/site/reveal.js/plugin/markdown/marked.js' },
-					{ src: 'https://andreadsw.github.io/site/reveal.js/plugin/markdown/markdown.js' },
-					{ src: 'https://andreadsw.github.io/site/reveal.js/plugin/notes/notes.js', async: true },
-					{ src: 'https://andreadsw.github.io/site/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+            <!-- Slide  -->
+            <section data-transition="zoom">
+                  <h2>#DAY 1</h2>
+            </section>
+
+            <!-- Slide  -->
+            <section data-transition="slide-in fade-out">
+               <h2>Front-end Development with Pattern Lab and Twig</h2>
+               <p class="fragment" data-fragment-index="2"><font color="red">by scaragucc and chaz.chumley</font></p>
+               <p class="fragment" data-fragment-index="3"><font color="blue">Front-end development: </font><a href="https://www.youtube.com/watch?v=Og0ICdASO_Y">video link</a></p>
+            </section>
+
+            <!-- Slide  -->
+            <section data-transition="slide-in fade-out">
+               <img data-src="slides/images/D8_logo.png">
+               <img data-src="slides/images/twig_ezno_default.png">
+               <img data-src="slides/images/plab-logo.png">
+               <p class="fragment" data-fragment-index="2">Tools: Twig, D8 and Pattern lab is better together</p>
+            </section>
+
+            <!-- Slide  -->
+            <section data-transition="slide-in fade-out">
+               <ul>
+                  <li class="fragment" data-fragment-index="4">Patterns lab template structure: Pattern, organisms and nodes. Create atomic design</li>
+                  <li class="fragment" data-fragment-index="5">Pattern lab <a href="http://demo.patternlab.io/">demo patternlab.io</a>
+                  <li class="fragment" data-fragment-index="7">It can be done first separated from Drupal. It looks like a style guide.</li>
+                  <li class="fragment" data-fragment-index="8">Patterns lab mimic the variables in the twig templates.</li>
+                  <li class="fragment" data-fragment-index="9">Approach suggested is using pattern lab, mapping Drupal field and twig.</li>
+               </ul>
+            </section>
+
+            <!-- Slide  -->
+            <section data-transition="zoom">
+                  <h2>#DAY 2</h2>
+            </section>
+
+            <!-- Slide  -->
+            <section data-transition="slide-in fade-out">
+               <h2>Closing the Gaps: Prioritizing Accessibility in Custom Themes with Drupal 8</h2>
+               <p class="fragment" data-fragment-index="2"><font color="red">by @emarchak</font></p>
+               <p class="fragment" data-fragment-index="3"><font color="blue">Front-end development: </font><a href="https://www.youtube.com/watch?v=cg5gDrfYg78">video link</a>
+            </section>
+
+            <!-- Slide  -->
+            <section data-transition="slide-in fade-out">
+               <img data-src="slides/images/logo.png">
+               <ul>
+                  <li class="fragment" data-fragment-index="4">Acessibiliy = A11y in Drupal8</li>
+                  <li class="fragment" data-fragment-index="5">Use headless components using react.js. <a href="http://react-etc.net/entry/headless-cms-with-react-js">See more</a></li>
+                  <li class="fragment" data-fragment-index="6">Acessibility levels: Level A, Level AA and Level AAA - <a href="https://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></li>
+                  <li class="fragment" data-fragment-index="7">Make a sure your website get the AA. The AAA is ideal but not realistic.</li>
+                  <li class="fragment" data-fragment-index="8">Automated tools: <a href="http://wave.webaim.org/">wave</a> and <a href="https://tenon.io/">tenon.io</a></li>
+                  <li class="fragment" data-fragment-index="9">You can use tools to analise your page manually also do a funcional testing and an user experience testing</li>
+               </ul>
+            </section>
+
+            <!-- Slide  -->
+            <section data-transition="zoom">
+                  <h2>#DAY 3</h2>
+            </section>
+
+            <!-- Slide  -->
+            <section data-transition="slide-in fade-out">
+               <h2>React, relay and GraphQL on drupal8</h2>
+               <p class="fragment" data-fragment-index="2"><font color="red">by fubhy, ohthehugemanatee and moshe weitzman</font></p>
+               <p class="fragment" data-fragment-index="3"><font color="blue">Front-end development: </font><a href="https://www.youtube.com/watch?v=yhyoQwuSUWo">video link</a></p>
+            </section>
+
+            <!-- Slide  -->
+            <section data-transition="slide-in fade-out">
+               <ul>
+                  <li class="fragment" data-fragment-index="3"><img data-src="slides/images/logo.svg" width="80" height="80"><a href="http://graphql.org/">GraphQL</a> is a query language for your API</li>
+                  <li class="fragment" data-fragment-index="3">Using GraphQL module in Drupal you can navigate your schema and queries</li>
+                  <li class="fragment" data-fragment-index="4">GraphQL can be handled entitity reference easily</li>
+                  <li class="fragment" data-fragment-index="5">The GraphQL web service can build all schema from fields api and entity api. There is permission available for each field</li>
+                  <li class="fragment" data-fragment-index="6">add here BENEFITS Picture</li>
+                  <li class="fragment" data-fragment-index="7">React.js works very well with GraphQL and relay</li>
+                  <li class="fragment" data-fragment-index="8">You can create a standalone component</li>
+               </ul>
+            </section>
+
+            <!-- Slide  -->
+            <section data-transition="slide-in fade-out">
+               <h2>React Front-end For Your Drupal 8 Back-end</h2>
+               <p class="fragment" data-fragment-index="2"><font color="red">by skippednote and aliyakhan</font></p>
+               <p class="fragment" data-fragment-index="3"><font color="blue">Front-end development: </font><a href="https://www.youtube.com/watch?v=aoQzbhgxmcg">video link</a></p>
+            </section>
+
+            <!-- Slide  -->
+            <section data-transition="slide-in fade-out">
+               <ul>
+                  <li class="fragment" data-fragment-index="3">Building complex UI</li>
+                  <li class="fragment" data-fragment-index="4">REACT: Pure function and desconstruct props</li>
+                  <li class="fragment" data-fragment-index="5">Component has state and bindings</li>
+                  <li class="fragment" data-fragment-index="6">Lifecycle methods: componentWillMount() ComponentDidMount()</li>
+                  <li class="fragment" data-fragment-index="7">Event Handlers</li>
+                  <li class="fragment" data-fragment-index="8">Redux is a predictable state container for javacript apps</li>
+               </ul>
+            </section>
+
+            <!-- Slide  -->
+            <!-- <section data-transition="zoom" data-background-image="https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png" data-background-size="900px" data-background-repeat="no-repeat">
+            </section> -->
+
+            <!-- Slide  -->
+            <section data-transition="slide-in fade-out">
+               <ul>
+                  <li class="fragment" data-fragment-index="1">Redux: Immutability, composition and pure functions</li>
+                  <li class="fragment" data-fragment-index="2">Actions and action creators: pure function with type property</li>
+                  <li class="fragment" data-fragment-index="3">Reducers take care of state implementation and take a current state and actions. Returns state</li>
+                  <li class="fragment" data-fragment-index="4">Store: use function createStore(). Providers: Store get current state and work with states</li>
+                  <li class="fragment" data-fragment-index="5">Progressive decoupling </li>
+                  <li class="fragment" data-fragment-index="6">How to expose data in Drupal and fetch data from Drupal into react</li>
+                  <li class="fragment" data-fragment-index="7">Modules in Drupal to expose data: HAL, HTTP Basic Authentication, Restful Web services and Serialization</li>
+                  <li class="fragment" data-fragment-index="8">Fully decoupled using JSON API</li>
+               </ul>
+            </section>
+         </div>
+      </div>
+
+      <script src="https://andreadsw.github.io/site/reveal.js/lib/js/head.min.js"></script>
+      <script src="https://andreadsw.github.io/site/reveal.js/js/reveal.js"></script>
+
+      <script>
+         // More info https://github.com/hakimel/reveal.js#configuration
+         Reveal.initialize({
+            history: true,
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+               { src: 'https://andreadsw.github.io/site/reveal.js/plugin/markdown/marked.js' },
+               { src: 'https://andreadsw.github.io/site/reveal.js/plugin/markdown/markdown.js' },
+               { src: 'https://andreadsw.github.io/site/reveal.js/plugin/notes/notes.js', async: true },
+               { src: 'https://andreadsw.github.io/site/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            ]
+         });
+      </script>
+   </body>
 </html>
