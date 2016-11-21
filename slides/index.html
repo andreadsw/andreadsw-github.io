@@ -1,49 +1,461 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>DrupalCon Dublin 2016</title>
+      <title>DrupalCon Dublin 2016</title>
 
-		<link rel="stylesheet" href="https://andreadsw.github.io/site/reveal.js/css/reveal.css">
-		<link rel="stylesheet" href="https://andreadsw.github.io/site/reveal.js/css/theme/black.css">
+      <link rel="stylesheet" href="https://andreadsw.github.io/site/reveal.js/css/reveal.css">
+      <link rel="stylesheet" href="https://andreadsw.github.io/site/reveal.js/css/theme/sky.css">
+      <link rel="stylesheet" href="../slides/css/reveal-overrides.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="https://andreadsw.github.io/site/reveal.js/lib/css/zenburn.css">
+      <!-- Theme used for syntax highlighting of code -->
+      <link rel="stylesheet" href="https://andreadsw.github.io/site/reveal.js/lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Presentation 1</section>
-				<section>Presentation 2</section>
-			</div>
-		</div>
+      <!-- Printing and PDF exports -->
+      <script>
+         var link = document.createElement( 'link' );
+         link.rel = 'stylesheet';
+         link.type = 'text/css';
+         link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+         document.getElementsByTagName( 'head' )[0].appendChild( link );
+      </script>
+   </head>
+   <body>
+      <div class="reveal">
+        <header style="top: 50px; text-align: center; z-index:500; font-size:32px; color: #00008B; font-size: 1.5em; font-family: Quicksand, sans-serif; text-transform: uppercase; background-color: rgba(255,215,0,0.5)"></header>
+         <div class="slides">
+            <!-- Background image -->
+            <section data-background-image="../slides/images/bg-header-watercolor-small-short.jpg" data-background-size="900px" data-background-repeat="no-repeat">
+              <p class="instructions">Please press space or click on the arrows</p>
+            </section>
 
-		<script src="https://andreadsw.github.io/site/reveal.js/lib/js/head.min.js"></script>
-		<script src="https://andreadsw.github.io/site/reveal.js/js/reveal.js"></script>
+            <!-- Presenters names  -->
+            <section data-state="header1">
+              <style>.header1 header:after { content: "Drupal tech notes"; }</style>
+              <h2>Front end development</h2>
+               <p><font color="red">by @andreadsw and @LucjaWszola</font></p>
+              <h2>Back end development</h2>
+               <p><font color="red">by @ioanma</font></p>
+            </section>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'https://andreadsw.github.io/site/reveal.js/plugin/markdown/marked.js' },
-					{ src: 'https://andreadsw.github.io/site/reveal.js/plugin/markdown/markdown.js' },
-					{ src: 'https://andreadsw.github.io/site/reveal.js/plugin/notes/notes.js', async: true },
-					{ src: 'https://andreadsw.github.io/site/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+            <!-- Slide  -->
+            <section data-transition="zoom">
+                  <h2>#DAY 1</h2>
+            </section>
+
+            <!-- Slide  content @andreadsw -->
+            <section data-transition="slide-in fade-out">
+               <h2>Front end Development with Pattern Lab and Twig</h2>
+               <p class="fragment" data-fragment-index="2"><font color="red">by scaragucc and chaz.chumley</font></p>
+               <p class="fragment" data-fragment-index="3"><font color="blue">Front end development: </font><a href="https://www.youtube.com/watch?v=Og0ICdASO_Y">video link</a></p>
+            </section>
+
+            <!-- Slide  image @andreadsw -->
+            <section data-transition="slide-in fade-out">
+               <img data-src="../slides/images/D8_logo.png">
+               <img data-src="../slides/images/twig_ezno_default.png">
+               <img data-src="../slides/images/plab-logo.png">
+               <p class="fragment" data-fragment-index="2">Tools: Twig, D8 and Pattern lab is better together</p>
+            </section>
+
+            <!-- Slide  content @andreadsw -->
+            <section data-state="header2" data-transition="slide-in fade-out">
+              <style>.header2 header:after { content: "Atomic design with D8"; }</style>
+               <ul>
+                  <li class="fragment" data-fragment-index="4">Patterns lab template structure: Pattern, organisms and nodes. Create atomic design</li>
+                  <li class="fragment" data-fragment-index="5">Pattern lab <a href="http://demo.patternlab.io/">demo patternlab.io</a>
+                  <li class="fragment" data-fragment-index="6">It can be done first separated from Drupal. It looks like a style guide.</li>
+                  <li class="fragment" data-fragment-index="7">Patterns lab mimic the variables in the twig templates.</li>
+                  <li class="fragment" data-fragment-index="8">Approach suggested is using pattern lab, mapping Drupal field and twig.</li>
+                  <li class="fragment" data-fragment-index="9">Patterns lab template structure: Pattern, organisms and nodes ...</li>
+               </ul>
+            </section>
+
+            <!-- Slide image -->
+            <section data-transition="zoom" data-background-image="../slides/images/ingredients.jpg" data-background-size="900px" data-background-repeat="no-repeat">
+            </section>
+
+            <!-- Slide  title @LucjaWszola-->
+            <section data-transition="slide-in fade-out">
+               <h2>Improving the responsive web design process in 2016</h2>
+               <p class="fragment" data-fragment-index="2"><font color="red">by ckrina</font></p>
+               <p class="fragment" data-fragment-index="3"><font color="blue">Front end development: </font><a href="https://www.youtube.com/watch?v=152J_74KGl0">video link</a></p>
+            </section>
+
+            <!-- Slide  content -->
+            <section data-transition="slide-in fade-out">
+              <ul>
+                <!-- Add an image here -->
+                <img data-src="../slides/images/multidevice.jpg" alt="copyright www.sitrion.com">
+                <span class="copyright">&copy; www.sitrion.com</span>
+                 <li class="fragment" data-fragment-index="1">Multi device experiences</li>
+                 <li class="fragment" data-fragment-index="2">Content first and mobile first</li>
+                 <li class="fragment" data-fragment-index="3">Responsive prototypes to the client</li>
+                 <li class="fragment" data-fragment-index="4">Real content used within design</li>
+                 <li class="fragment" data-fragment-index="5">Atomic design and components  </li>
+              </ul>
+            </section>
+
+            <!-- Slide  content -->
+            <section data-state="header3" data-transition="slide-in fade-out">
+              <style>.header3 header:after { content: "Site performance is UX"; }</style>
+              <ul>
+                 <li class="fragment" data-fragment-index="1">Decide performance budget - more than 10sec and a user is gone...</li>
+                 <li class="fragment" data-fragment-index="2">Optimize images, concatenate and minify text files, compress, cache</li>
+                 <li class="fragment" data-fragment-index="3">CSS methodologies</li>
+                 <li class="fragment" data-fragment-index="4">Reuse your css > reduce page size</li>
+                 <li class="fragment" data-fragment-index="5">Faster css rendering - 1 class for an element, (avoid last child etc)</li>
+              </ul>
+            </section>
+
+            <!-- Slide  content -->
+            <section data-state="header4" data-transition="slide-in fade-out">
+              <style>.header4 header:after { content: "Living styleguides"; }</style>
+               <ul>
+                  <!-- Add an image here -->
+                  <li class="fragment" data-fragment-index="1">Faster build for new sections and page</li>
+                  <li class="fragment" data-fragment-index="2">Standardise css - small and quick to load</li>
+                  <li class="fragment" data-fragment-index="3">Consistency in design</li>
+               </ul>
+            </section>
+
+            <!-- Slide  content -->
+            <section data-state="header5" data-transition="slide-in fade-out">
+              <style>.header5 header:after { content: "Fixed units vs relativ units"; }</style>
+               <ul>
+                 <!-- Add an image here -->
+                  <li class="fragment" data-fragment-index="1">px - em - rem</li>
+                  <li class="fragment" data-fragment-index="2">Viewport size units - vh, vw, vmax</li>
+                  <div class="fragment box" data-fragment-index="3">
+                    <p class="fragment box-title" data-fragment-index="4">What is the difference between PX, EM and Percent?</p>
+                    <p class="fragment box-body" data-fragment-index="4">
+                      Pixel is a static measurement, while percent and EM are relative measurements.
+                      The size of an EM or percent depends on its parent. If the text size of body is 16 pixels,
+                      then 150% or 1.5 EM will be 24 pixels (1.5 * 16). Look at CSS Units for more measurement units.
+                      <span class="copyright">http://www.w3schools.com/</span>
+                    </p>
+                  </div>
+               </ul>
+            </section>
+
+            <!-- Slide  content -->
+            <section data-state="header6" data-transition="slide-in fade-out">
+              <style>.header6 header:after { content: "Responsive typography"; }</style>
+              <ul>
+                 <li class="fragment" data-fragment-index="1">Depending on a user distance from the screen - TV biggest, mobile smaller font sizes</li>
+                 <li class="fragment" data-fragment-index="2">40-80 characters per line</li>
+                 <li class="fragment" data-fragment-index="3">Mobile 14px</li>
+                 <li class="fragment" data-fragment-index="4">Desktop 16px</li>
+                 <li class="fragment" data-fragment-index="5">Readability</li>
+                 <li class="fragment" data-fragment-index="6">Modern font formats</li>
+              </ul>
+            </section>
+
+            <!-- Slide  content -->
+            <section data-state="header7" data-transition="slide-in fade-out">
+              <style>.header7 header:after { content: "Images"; }</style>
+              <ul>
+                 <li class="fragment" data-fragment-index="1">Highest quality images supported and nothing more (61% of the web traffic)</li>
+                 <li class="fragment" data-fragment-index="2">Scalable images</li>
+                 <li class="fragment" data-fragment-index="3">Adapted images</li>
+                 <li class="fragment" data-fragment-index="4">Crop API - image widget crop, based on focal point</li>
+                 <li class="fragment" data-fragment-index="5">Save hover for shortcuts - be accessible in browsers where a mouse pointer does not exist!</li>
+              </ul>
+            </section>
+
+            <!-- Slide  title @ioanma -->
+            <section data-transition="slide-in fade-out">
+               <h2>Double your toolbox: The shared goodies of D8 and Symfony</h2>
+               <p class="fragment" data-fragment-index="2"><font color="red">by nicolas.grekas</font></p>
+               <p class="fragment" data-fragment-index="3"><font color="blue">Back end development: </font><a href="https://www.youtube.com/watch?v=mUToEr6CBJY">video link</a></p>
+            </section>
+
+            <!-- Slide  content - backend  @ioanma -->
+            <section data-state="header8" data-transition="slide-in fade-out">
+              <style>.header8 header:after { content: "Symfony and Drupal"; }</style>
+              <ul>
+                 <li class="fragment" data-fragment-index="1">SILEX and NGINX</li>
+                 <li class="fragment" data-fragment-index="2">PHP -S localhost:8001</li>
+                 <li class="fragment" data-fragment-index="3">Request (GET /hello/Drupal!) > Routing (controller) > Controller (constructs the page) > Response</li>
+                 <li class="fragment" data-fragment-index="4">Installing Symfony > Symfony installer</li>
+                 <li class="fragment" data-fragment-index="5">Symfony project structure</li>
+                 <li class="fragment" data-fragment-index="6">Services = useful objects that do things</li>
+                 <li class="fragment" data-fragment-index="7">Container = associative array / object (?) that holds the services</li>
+                 <li class="fragment" data-fragment-index="8">Doctrine</li>
+                 <li class="fragment" data-fragment-index="9">DBAL PDO</li>
+                 <li class="fragment" data-fragment-index="10">Symfony demo</li>
+                 <li class="fragment" data-fragment-index="11">Symfony plugin for phpstorm</li>
+              </ul>
+            </section>
+
+            <!-- Slide  -->
+            <section data-transition="zoom">
+              <h2>#DAY 2</h2>
+            </section>
+
+            <!-- Slide  content @LucjaWszola  -->
+            <section data-transition="slide-in fade-out">
+               <h2>Closing the Gaps: Prioritizing Accessibility in Custom Themes with Drupal 8</h2>
+               <p class="fragment" data-fragment-index="2"><font color="red">by @emarchak</font></p>
+               <p class="fragment" data-fragment-index="3"><font color="blue">Front end development: </font><a href="https://www.youtube.com/watch?v=cg5gDrfYg78">video link</a>
+            </section>
+
+            <!-- Slide  -->
+            <!-- Background image quotes -->
+            <section data-background-image="../slides/images/tim.png" data-background-size="900px" data-background-repeat="no-repeat">
+            </section>
+
+            <!-- Slide  content @LucjaWszola-->
+            <section data-state="header9" data-transition="slide-in fade-out">
+              <style>.header9 header:after { content: "Types of barriers"; }</style>
+              <ul>
+                 <li class="fragment" data-fragment-index="1">Physical, mobile, motor</li>
+                 <li class="fragment" data-fragment-index="2">Visual also as colour blind </li>
+                 <li class="fragment" data-fragment-index="3">Auditory</li>
+                 <li class="fragment" data-fragment-index="4">Learning difficulties</li>
+                 <li class="fragment" data-fragment-index="5">Speech or language</li>
+                 <li class="fragment" data-fragment-index="6">Mental, intellectual, developmental</li>
+              </ul>
+            </section>
+
+            <!-- Slide  content @LucjaWszola-->
+            <section data-state="header10" data-transition="slide-in fade-out">
+              <style>.header10 header:after { content: "Types of solutions"; }</style>
+              <ul>
+                 <li class="fragment" data-fragment-index="1">Keyboard, mouse, or touch navigation</li>
+                 <li class="fragment" data-fragment-index="2">Screen reader compatibility and descriptive videos</li>
+                 <li class="fragment" data-fragment-index="3">Captioning</li>
+                 <li class="fragment" data-fragment-index="4">Legible design and information architecture</li>
+                 <li class="fragment" data-fragment-index="5">Translatable content</li>
+                 <li class="fragment" data-fragment-index="6">Trigger warnings for content</li>
+              </ul>
+            </section>
+
+            <!-- Slide  content @LucjaWszola-->
+            <section data-state="header11" data-transition="slide-in fade-out">
+              <style>.header11 header:after { content: "Equality vs Justice"; }</style>
+              <ul>
+                 <li class="fragment" data-fragment-index="1">Some need more technology to access our content</li>
+                 <li class="fragment" data-fragment-index="2">W3C</li>
+                 <li class="fragment" data-fragment-index="3">Accessibility guidelines - <a href="https://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></li>
+                 <li class="fragment" data-fragment-index="4">Level A is essential</li>
+                 <li class="fragment" data-fragment-index="5">AA is preferred</li>
+                 <li class="fragment" data-fragment-index="6">AAA is optimal is ideal </li>
+              </ul>
+            </section>
+
+            <!-- Slide  content @LucjaWszola -->
+            <section data-state="header12" data-transition="slide-in fade-out">
+              <style>.header12 header:after { content: "Accessibility and D8"; }</style>
+              <ul>
+                 <li class="fragment" data-fragment-index="1">Acessibiliy = A11y in Drupal8</li>
+                 <li class="fragment" data-fragment-index="2">D8AX Drupal 8 accessibility experience</li>
+                 <li class="fragment" data-fragment-index="3">WAI-ARIA</li>
+                 <li class="fragment" data-fragment-index="4">HTML5 and improved semantics </li>
+                 <li class="fragment" data-fragment-index="5">Content authoring and ATAG compliance</li>
+                 <li class="fragment" data-fragment-index="6">Alt tags</li>
+              </ul>
+              <p class="fragment" data-fragment-index="6"><font class="quotes">"We didn't want technically accessible we wanted beautiful accessible."</font></p>
+            </section>
+
+            <!-- Slide  content @LucjaWszola-->
+            <section data-state="header13" data-transition="slide-in fade-out">
+              <style>.header13 header:after { content: "Approach"; }</style>
+              <ul>
+                 <li class="fragment" data-fragment-index="1">Plan heading structure early</li>
+                 <li class="fragment" data-fragment-index="2">Prioritise function over form</li>
+                 <li class="fragment" data-fragment-index="3">Allow indicators</li>
+                 <li class="fragment" data-fragment-index="4">Communicate function of a page before the form</li>
+              </ul>
+            </section>
+
+            <!-- Slide  content @LucjaWszola-->
+            <section data-state="header14" data-transition="slide-in fade-out">
+              <style>.header14 header:after { content: "Testing"; }</style>
+                <p class="fragment" data-fragment-index="1"><font color="blue">Automated functional testing</font></p>
+              <ul>
+                 <li class="fragment" data-fragment-index="2"><a href="http://wave.webaim.org/">Wave</a> toolbar by Webaim.org</li>
+                 <li class="fragment" data-fragment-index="3"><a href="https://tenon.io/">Tenon.io</a></li>
+                 <li class="fragment" data-fragment-index="4">Allow indicators</li>
+                 <li class="fragment" data-fragment-index="5">Communicate function of a page before the form</li>
+              </ul>
+              <p class="fragment" data-fragment-index="6"><font color="blue">Manual functional testing</font></p>
+            <ul>
+               <li class="fragment" data-fragment-index="7"><a href="http://www.apple.com/uk/accessibility/mac/vision/">Voiceover for macOS and iOS</a></li>
+               <li class="fragment" data-fragment-index="8"><a href="https://support.google.com/accessibility/android/answer/6007100?hl=en-GB">Talkback for android</a></li>
+               <li class="fragment" data-fragment-index="9"><a href="http://www.nvaccess.org/">NVDA for Windows</a></li>
+               <li class="fragment" data-fragment-index="10"><a href="http://www.freedomscientific.com/Products/Blindness/JAWS">JAWS for Windows</a></li>
+            </ul>
+          </section>
+
+          <!-- Slide  content @LucjaWszola-->
+          <section data-state="header15" data-transition="slide-in fade-out">
+            <style>.header15 header:after { content: "Testing"; }</style>
+          <p class="fragment" data-fragment-index="11"><font color="blue">User experience testing</font></p>
+          <ul>
+           <li class="fragment" data-fragment-index="12">Researchers meet with individual users</li>
+           <li class="fragment" data-fragment-index="13">Examine behaviours and attitude </li>
+          </ul>
+        </section>
+
+            <!-- Slide  content @LucjaWszola-->
+            <section data-state="header16" data-transition="slide-in fade-out">
+              <style>.header16 header:after { content: "How to resolve gaps"; }</style>
+              <ul>
+                 <li class="fragment" data-fragment-index="1">Functional solutions</li>
+                 <li class="fragment" data-fragment-index="2">Landmark labels</li>
+                 <li class="fragment" data-fragment-index="3">Add descriptive aria labels to page landscape</li>
+                 <li class="fragment" data-fragment-index="4">Visual, verbal indicators are turned on</li>
+                 <li class="fragment" data-fragment-index="5">Semantic names of the elements like brand banner, main menu etc</li>
+                 <li class="fragment" data-fragment-index="6">Improve legibility of pager for screen readers</li>
+                 <li class="fragment" data-fragment-index="7">Enable inline form errors and remove HTML5 required attribute</li>
+                 <li class="fragment" data-fragment-index="8">Skip to main content</li>
+                 <li class="fragment" data-fragment-index="9">Use picture element</li>
+              </ul>
+            </section>
+
+            <!-- Slide  content @LucjaWszola-->
+            <section data-state="header17" data-transition="slide-in fade-out">
+              <style>.header17 header:after { content: "Best practices"; }</style>
+                <p class="fragment" data-fragment-index="1"><font color="blue">Visual design best practices</font></p>
+              <ul>
+                 <li class="fragment" data-fragment-index="2">Check early and re-check often</li>
+                 <li class="fragment" data-fragment-index="3">Sketch colour contrast</li>
+              </ul>
+              <p class="fragment" data-fragment-index="4"><font color="blue">UX testing  best practices</font></p>
+            <ul>
+               <li class="fragment" data-fragment-index="5">Mixing remote and in person testing</li>
+               <li class="fragment" data-fragment-index="6">Bring your own device</li>
+               <li class="fragment" data-fragment-index="7">Emphasis on depth over breadth</li>
+            </ul>
+            <p class="fragment" data-fragment-index="8"><font color="blue">Some accessibility guides regulators</font></p>
+            <ul>
+             <li class="fragment" data-fragment-index="9">European Union accessibility requirements</li>
+             <li class="fragment" data-fragment-index="10">Access for Ontarians with disabilities act Canada</li>
+            </ul>
+              <p class="fragment" data-fragment-index="11"><font class="quotes">"Nothing about us without us."</font></p>
+          </section>
+
+            <!-- Slide  -->
+            <section data-transition="zoom">
+                  <h2>#DAY 3</h2>
+            </section>
+
+            <!-- Slide  -->
+            <section data-transition="slide-in fade-out">
+               <h2>React, relay and GraphQL on drupal8</h2>
+               <p class="fragment" data-fragment-index="2"><font color="red">by fubhy, ohthehugemanatee and moshe weitzman</font></p>
+               <p class="fragment" data-fragment-index="3"><font color="blue">Front end development: </font><a href="https://www.youtube.com/watch?v=yhyoQwuSUWo">video link</a></p>
+            </section>
+
+            <!-- Slide  content @andreadsw -->
+            <section data-state="header18" data-transition="slide-in fade-out">
+              <style>.header18 header:after { content: "Headless CMS and GraphQL"; }</style>
+               <ul>
+                  <li class="fragment" data-fragment-index="1"><img data-src="../slides/images/graphql-logo.svg" width="80" height="80"><a href="http://graphql.org/">GraphQL</a> is a query language for your API</li>
+                  <li class="fragment" data-fragment-index="2">Use headless components using react.js. <a href="http://react-etc.net/entry/headless-cms-with-react-js">Headless CMS with React.js</a></li>
+                  <li class="fragment" data-fragment-index="3">Using GraphQL module in Drupal you can navigate your schema and queries</li>
+                  <li class="fragment" data-fragment-index="4">GraphQL can be handled entitity reference easily</li>
+                  <li class="fragment" data-fragment-index="5">The GraphQL web service can build all schema from fields api and entity api. There is permission available for each field</li>
+                  <li class="fragment" data-fragment-index="6">React.js works very well with GraphQL and relay</li>
+                  <li class="fragment" data-fragment-index="7">You can create a standalone component</li>
+               </ul>
+            </section>
+
+            <!-- Slide image -->
+            <section data-transition="zoom" data-background-image="../slides/images/Benefits-GraphQL.jpg" data-background-size="900px" data-background-repeat="no-repeat">
+            </section>
+
+            <!-- Slide  content @andreadsw -->
+            <section data-transition="slide-in fade-out">
+               <h2>React Front end For Your Drupal 8 Back end</h2>
+               <p class="fragment" data-fragment-index="2"><font color="red">by skippednote and aliyakhan</font></p>
+               <p class="fragment" data-fragment-index="3"><font color="blue">Front end development: </font><a href="https://www.youtube.com/watch?v=aoQzbhgxmcg">video link</a></p>
+            </section>
+
+            <!-- Slide  content @andreadsw -->
+            <section data-state="header19" data-transition="slide-in fade-out">
+              <style>.header19 header:after { content: "React with Redux"; }</style>
+               <ul>
+                  <li class="fragment" data-fragment-index="1">Building complex UI</li>
+                  <li class="fragment" data-fragment-index="2">REACT: Pure function and desconstruct props</li>
+                  <li class="fragment" data-fragment-index="3">Component has state and bindings</li>
+                  <li class="fragment" data-fragment-index="4">Lifecycle methods: componentWillMount() ComponentDidMount()</li>
+                  <li class="fragment" data-fragment-index="5">Event Handlers</li>
+                  <li class="fragment" data-fragment-index="6">Redux is a predictable state container for javacript apps</li>
+               </ul>
+            </section>
+
+            <!-- Slide image -->
+            <section data-transition="zoom" data-background-image="../slides/images/React-redux.jpg" data-background-size="900px" data-background-repeat="no-repeat">
+            </section>
+
+            <!-- Slide image -->
+            <section data-transition="zoom" data-background-image="../slides/images/Redux-Application-state.png" data-background-size="900px" data-background-repeat="no-repeat">
+            </section>
+
+            <!-- Slide  content @andreadsw -->
+            <section data-state="header20" data-transition="slide-in fade-out">
+              <style>.header20 header:after { content: "Redux"; }</style>
+               <ul>
+                  <li class="fragment" data-fragment-index="1">Redux: Immutability, composition and pure functions</li>
+                  <li class="fragment" data-fragment-index="2">Actions and action creators: pure function with type property</li>
+                  <li class="fragment" data-fragment-index="3">Reducers take care of state implementation and take a current state and actions. Returns state</li>
+                  <li class="fragment" data-fragment-index="4">Store: use function createStore(). Providers: Store get current state and work with states</li>
+                  <li class="fragment" data-fragment-index="5">Progressive decoupling </li>
+                  <li class="fragment" data-fragment-index="6">How to expose data in Drupal and fetch data from Drupal into react</li>
+                  <li class="fragment" data-fragment-index="7">Modules in Drupal to expose data: HAL, HTTP Basic Authentication, Restful Web services and Serialization</li>
+                  <li class="fragment" data-fragment-index="8">Fully decoupled using <a href="http://jsonapi.org/">JSON API</a></li>
+               </ul>
+            </section>
+
+
+            <!-- Slide  title @ioanma -->
+            <section data-transition="slide-in fade-out">
+               <h2>Migrating data to Drupal 8</h2>
+               <p class="fragment" data-fragment-index="2"><font color="red">by isholgueras</font></p>
+               <p class="fragment" data-fragment-index="3"><font color="blue">Back end development: </font><a href="https://www.youtube.com/watch?v=fZPN5eBsy5E">video link</a></p>
+            </section>
+
+            <!-- Slide  content - back end  @ioanma -->
+            <section data-state="header21" data-transition="slide-in fade-out">
+              <style>.header21 header:after { content: "Philosophy of Migrate framework"; }</style>
+              <ul>
+                 <li class="fragment" data-fragment-index="1">Requirements: Migrate, Migrate Drupal, Migrate Drupal UI </li>
+                 <li class="fragment" data-fragment-index="2">D8: no UI, no drush. Needed: Migrate tools + Migrate Plus </li>
+              </ul>
+              <p class="fragment" data-fragment-index="3"><font color="blue">Anatomy of migration</font></p>
+              <ul>
+                 <li class="fragment" data-fragment-index="4">Definitions: Yaml files / custom files </li>
+                 <li class="fragment" data-fragment-index="5">Plugins: PHP files, core plugins, core/custom plugins. Various plugin types...</li>
+              </ul>
+            </section>
+
+            <!-- Slide  -->
+            <section data-transition="zoom">
+                <h2>#End of slides</h2>
+            </section>
+
+         </div>
+      </div>
+
+      <script src="https://andreadsw.github.io/site/reveal.js/lib/js/head.min.js"></script>
+      <script src="https://andreadsw.github.io/site/reveal.js/js/reveal.js"></script>
+
+      <script>
+         // More info https://github.com/hakimel/reveal.js#configuration
+         Reveal.initialize({
+            history: true,
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+               { src: 'https://andreadsw.github.io/site/reveal.js/plugin/markdown/marked.js' },
+               { src: 'https://andreadsw.github.io/site/reveal.js/plugin/markdown/markdown.js' },
+               { src: 'https://andreadsw.github.io/site/reveal.js/plugin/notes/notes.js', async: true },
+               { src: 'https://andreadsw.github.io/site/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            ]
+         });
+      </script>
+   </body>
 </html>
