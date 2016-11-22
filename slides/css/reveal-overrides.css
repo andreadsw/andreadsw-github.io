@@ -31,7 +31,7 @@ p.fragment.box-body.visible.current-fragment {
 }
 
 p.instructions {
-  margin-top: 300px;
+  margin-top: 630px;
   display: block;
   position: relative;
 }
@@ -46,4 +46,8 @@ font.quotes {
   color: #673377;
   font-style: italic;
   font-size: 1.2em;
+}
+
+.fragment.box.visible {
+	margin-top: 20px;
 }
